@@ -8,6 +8,10 @@ html, body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*CSS Base - Fuentes*/
 
 @font-face {
