@@ -8,6 +8,13 @@ html, body {
     margin: 0;
 }
 
+/*CSS Base - Fuentes*/
+
+@font-face {
+    font-family: 'Bigboz';
+    src: url(../fonts/Bigboz.otf);
+}
+
 /*CSS Barra de Navegación - Título*/
 
 div.div_title {
