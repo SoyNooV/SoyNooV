@@ -16,7 +16,7 @@ a {
 
 @font-face {
     font-family: 'Bigboz';
-    src: url(../fonts/Bigboz.otf);
+    src: url(./fonts/Bigboz.otf);
 }
 
 /*CSS Barra de Navegación - Título*/
