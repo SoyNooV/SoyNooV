@@ -69,14 +69,14 @@ div.div_card {
 }
 
 figure.figure_figure {
-    margin-left: -4.5em;
+    margin-left: -7em;
     padding-top: 2px;
 }
 
 div.div_subtitle {
     font-family: 'RetroComputer';
-    margin-left: -7em;
     border-radius: 1em;
+    margin-left: -10em;
 }
 
 h2.h2_subtitle {
@@ -84,19 +84,14 @@ h2.h2_subtitle {
     font-size: 20px;
 }
 
-div.div_subtitle:hover {
-    background-color: #E74C3C;
-    color: #FDFEFE;
-}
-
 /*CSS Body - Cards - Alters*/
 
 div#div_card_left {
-    margin-right: 10em;
+    margin-right: 5em;
 }
 
 div#div_card_right {
-    margin-left: 10em;
+    margin-left: 5em;
 }
 
 /*CSS Body - Cards - Grid Columns*/
@@ -104,4 +99,16 @@ div#div_card_right {
 div.div_row {
     grid-template-columns: repeat(2, 1fr);
     display: grid;
+}
+
+/*CSS Body - Cards - Colors*/
+
+div#div_subtitle_riotgames:hover {
+    background-color: #E74C3C;
+    color: #FDFEFE;
+}
+
+div#div_subtitle_spotify:hover {
+    background-color: #2ECC71;
+    color: #FDFEFE;
 }
