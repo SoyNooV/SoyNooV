@@ -61,7 +61,7 @@ div.div_card {
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 1);
     grid-template-columns: repeat(2, 1fr);
     background-color: #FDFEFE;
-    margin: 6em 3em 0em 3em;
+    margin: 8em 3em 0em 3em;
     transition: all 0.5s;
     border-radius: 1em;
     color: #17202A;
@@ -110,5 +110,20 @@ div#div_subtitle_riotgames:hover {
 
 div#div_subtitle_spotify:hover {
     background-color: #2ECC71;
+    color: #FDFEFE;
+}
+
+div#div_subtitle_multimedia:hover {
+    background-color: #424949;
+    color: #FDFEFE;
+}
+
+div#div_subtitle_videogames:hover {
+    background-color: #566573;
+    color: #FDFEFE;
+}
+
+div#div_subtitle_minecraft:hover {
+    background-color: #196F3D;
     color: #FDFEFE;
 }
