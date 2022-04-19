@@ -1,4 +1,4 @@
-/*CSS Base*/
+/*CSS HTML*/
 
 html, body {
     background-color: #17202A;
@@ -12,20 +12,92 @@ a {
     text-decoration: none;
 }
 
-/*CSS Base - Fuentes*/
+/*CSS Base - Fonts*/
 
 @font-face {
     font-family: 'Bigboz';
     src: url(./fonts/Bigboz.otf);
 }
 
-/*CSS Barra de Navegación - Título*/
-
-div.div_title {
-    font-family: 'Bigboz';
-    color: #FFFFFF;
+@font-face {
+    font-family: 'RetroComputer';
+    src: url(./fonts/retro_computer_personal_use.ttf);
 }
 
-h1#h1_title {
-    font-size: 58px;
+/*CSS Base - Img*/
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+/*CSS Nav*/
+
+div.div_nav {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 1);
+    background-color: #FDFEFE;
+    transition: all 0.5s;
+    color: #17202A;
+    line-height: 5px;
+    position: fixed;
+    width: 100%;
+}
+
+div.div_nav:hover {
+    background-color: #17202A;
+    color: #FDFEFE;
+}
+
+/*CSS Nav - Title*/
+
+h1.h1_title {
+    font-family: 'Bigboz';
+    font-size: 45px;
+}
+
+/*CSS Body - Cards*/
+
+div.div_card {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 1);
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #FDFEFE;
+    margin: 6em 0em 0em 3em;
+    transition: all 0.5s;
+    border-radius: 1em;
+    color: #17202A;
+    display: grid;
+}
+
+figure.figure_figure {
+    margin-left: -4.5em;
+    padding-top: 2px;
+}
+
+div.div_subtitle {
+    font-family: 'RetroComputer';
+    margin-left: -7em;
+    border-radius: 1em;
+}
+
+h2.h2_subtitle {
+    line-height: 2.5em;
+    font-size: 20px;
+}
+
+div.div_subtitle:hover {
+    background-color: #E74C3C;
+    color: #FDFEFE;
+}
+
+/*CSS Body - Cards - Alters*/
+
+div#div_card_left {
+    margin-right: 10em;
+}
+
+/*CSS Body - Cards - Grid Columns*/
+
+div.div_row {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
 }
