@@ -52,7 +52,7 @@ div.div_nav:hover {
 
 h1.h1_title {
     font-family: 'Bigboz';
-    font-size: 45px;
+    font-size: 50px;
 }
 
 /*CSS Body - Cards*/
@@ -61,7 +61,7 @@ div.div_card {
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 1);
     grid-template-columns: repeat(2, 1fr);
     background-color: #FDFEFE;
-    margin: 6em 0em 0em 3em;
+    margin: 6em 3em 0em 3em;
     transition: all 0.5s;
     border-radius: 1em;
     color: #17202A;
@@ -93,6 +93,10 @@ div.div_subtitle:hover {
 
 div#div_card_left {
     margin-right: 10em;
+}
+
+div#div_card_right {
+    margin-left: 10em;
 }
 
 /*CSS Body - Cards - Grid Columns*/
