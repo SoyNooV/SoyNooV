@@ -43,7 +43,7 @@ header {
     color: #17202A;
     line-height: 5%;
     position: fixed;
-    cursor: pointer;
+    cursor: default;
     width: 100%;
 }
 
@@ -55,6 +55,17 @@ h1#h1_header {
 header:hover {
     transform: scale(1.2);
     letter-spacing: 10px;
+}
+
+header#header_back {
+    cursor: pointer;
+}
+
+header#header_back:hover {
+    border-bottom-right-radius: 5mm;
+    transform: translateX(-18cm);
+    background-color: #E74C3C;
+    color: #FDFEFE;
 }
 
 /* MAIN */
@@ -84,7 +95,7 @@ figure {
 
 div.div_name {
     transition: all 1s 0s ease;
-    margin-left: -100%;
+    margin-left: -10%;
     border-radius: 3mm;
     line-height: 12mm;
     padding-left: 1cm;
@@ -108,7 +119,7 @@ h2.h2_name {
 /* MAIN - CARDS - SETTINGS */
 
 div#div_card_top {
-    margin-top: 40%;
+    margin-top: 35%;
 }
 
 div.div_cards {
