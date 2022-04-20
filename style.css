@@ -1,6 +1,6 @@
-/*CSS HTML*/
+/* HTML */
 
-html, body {
+body {
     background-color: #17202A;
     text-align: center;
     color: #FDFEFE;
@@ -8,11 +8,7 @@ html, body {
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
-/*CSS Base - Fonts*/
+/* HTML - FONTS */
 
 @font-face {
     font-family: 'Bigboz';
@@ -24,106 +20,144 @@ a {
     src: url(./fonts/retro_computer_personal_use.ttf);
 }
 
-/*CSS Base - Img*/
+/* HTML - IMG */
 
 img {
     height: 50px;
     width: 50px;
 }
 
-/*CSS Nav*/
+/* HEADER */
 
-div.div_nav {
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 1);
+header {
+    box-shadow: 5px 5px 15px 5px #000000;
     background-color: #FDFEFE;
-    transition: all 0.5s;
+    transition: all 1s 0s ease;
     color: #17202A;
-    line-height: 5px;
+    line-height: 5%;
     position: fixed;
+    cursor: pointer;
     width: 100%;
 }
 
-div.div_nav:hover {
-    background-color: #17202A;
-    color: #FDFEFE;
-}
-
-/*CSS Nav - Title*/
-
-h1.h1_title {
+h1#h1_header {
     font-family: 'Bigboz';
     font-size: 50px;
 }
 
-/*CSS Body - Cards*/
+header:hover {
+    transform: scale(1.1);
+}
 
-div.div_card {
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 1);
+/* MAIN */
+
+div.div_container {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+}
+
+/* MAIN - CARDS */
+
+div.div_cards {
+    box-shadow: 5px 5px 15px 5px #000000;
     grid-template-columns: repeat(2, 1fr);
     background-color: #FDFEFE;
-    margin: 8em 3em 0em 3em;
-    transition: all 0.5s;
-    border-radius: 1em;
+    border-radius: 3mm;
     color: #17202A;
+    margin-left: 5%;
     display: grid;
+    width: 90%;
 }
 
-figure.figure_figure {
-    margin-left: -7em;
-    padding-top: 2px;
+figure {
+    margin-left: -4cm;
 }
 
-div.div_subtitle {
+div.div_name {
+    margin-left: -7.4cm;
+    padding-left: 2.5cm;
+    border-radius: 3mm;
+    line-height: 12mm;
+}
+
+div.div_cards:hover {
+    cursor: pointer;
+}
+
+h2.h2_name {
     font-family: 'RetroComputer';
-    border-radius: 1em;
-    margin-left: -10em;
 }
 
-h2.h2_subtitle {
-    line-height: 2.5em;
-    font-size: 20px;
+/* MAIN - CARDS - COLORS */
+
+div#div_card_riotgames {
+    transition: all 1s 0s ease;
+    margin-top: 3cm;
 }
 
-/*CSS Body - Cards - Alters*/
-
-div#div_card_left {
-    margin-right: 5em;
+div#div_card_spotify {
+    transition: all 1s 0s ease;
+    margin-top: 3cm;
 }
 
-div#div_card_right {
-    margin-left: 5em;
+div#div_card_riotgames:hover {
+    transform: scale(0.95);
 }
 
-/*CSS Body - Cards - Grid Columns*/
-
-div.div_row {
-    grid-template-columns: repeat(2, 1fr);
-    display: grid;
+div#div_card_spotify:hover {
+    transform: scale(0.95);
 }
 
-/*CSS Body - Cards - Colors*/
-
-div#div_subtitle_riotgames:hover {
-    background-color: #E74C3C;
-    color: #FDFEFE;
+div#div_name_riotgames:hover {
+    animation: bck_color_riotgames 1s forwards;
 }
 
-div#div_subtitle_spotify:hover {
-    background-color: #2ECC71;
-    color: #FDFEFE;
+div#div_name_riotgames {
+    animation: bck_color_riotgames_reverse 1s;
 }
 
-div#div_subtitle_multimedia:hover {
-    background-color: #424949;
-    color: #FDFEFE;
+div#div_name_spotify:hover {
+    animation: bck_color_spotify 1s forwards;
 }
 
-div#div_subtitle_videogames:hover {
-    background-color: #566573;
-    color: #FDFEFE;
+div#div_name_spotify {
+    animation: bck_color_spotify_reverse 1s;
 }
 
-div#div_subtitle_minecraft:hover {
-    background-color: #196F3D;
-    color: #FDFEFE;
+/* MAIN - CARDS - KEYFRAMES */
+
+@keyframes bck_color_riotgames {
+    100% {
+        margin-left: -5cm;
+        padding-left: 0;
+        background-color: #E74C3C;
+        color: #FDFEFE;
+    }
+}
+
+@keyframes bck_color_riotgames_reverse {
+    0% {
+        margin-left: -5cm;
+        padding-left: 0;
+        background-color: #E74C3C;
+        color: #FDFEFE;
+    }
+}
+
+@keyframes bck_color_spotify {
+    100% {
+        margin-left: -5cm;
+        padding-left: 0;
+        background-color: #2ECC71;
+        color: #FDFEFE;
+    }
+}
+
+@keyframes bck_color_spotify_reverse {
+    0% {
+        margin-left: -5cm;
+        padding-left: 0;
+        background-color: #2ECC71;
+        color: #FDFEFE;
+    }
 }
