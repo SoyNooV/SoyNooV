@@ -8,6 +8,10 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* HTML - FONTS */
 
 @font-face {
@@ -70,12 +74,12 @@ div.div_cards {
 }
 
 figure {
-    margin-left: -4cm;
+    margin-right: 5cm;
+    margin-left: 0;
 }
 
 div.div_name {
-    margin-left: -7.4cm;
-    padding-left: 2.5cm;
+    margin-left: -7.5cm;
     border-radius: 3mm;
     line-height: 12mm;
 }
@@ -110,24 +114,26 @@ div#div_card_spotify:hover {
 
 div#div_name_riotgames:hover {
     margin-left: -5cm;
-    padding-left: 0;
+    padding-left: 1cm;
     background-color: #E74C3C;
     color: #FDFEFE;
 }
 
 div#div_name_riotgames {
     transition: all 1s 0s ease;
+    padding-left: 1cm;
 }
 
 div#div_name_spotify:hover {
     margin-left: -5cm;
-    padding-left: 0;
+    padding-left: 1cm;
     background-color: #2ECC71;
     color: #FDFEFE;
 }
 
 div#div_name_spotify {
     transition: all 1s 0s ease;
+    padding-left: 1cm;
 }
 
 /* MAIN - CARDS - KEYFRAMES */
