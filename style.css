@@ -10,6 +10,8 @@ body {
 
 a {
     text-decoration: none;
+    border-radius: 3mm;
+    cursor: default;
 }
 
 /* HTML - FONTS */
@@ -80,9 +82,10 @@ figure {
 }
 
 div.div_name {
-    margin-left: -7.5cm;
+    margin-left: -100%;
     border-radius: 3mm;
     line-height: 12mm;
+    border: solid;
 }
 
 div.div_cards:hover {
@@ -95,21 +98,16 @@ h2.h2_name {
 
 /* MAIN - CARDS - COLORS */
 
-div#div_card_riotgames {
-    transition: all 1s 0s ease;
+div#div_card_top {
     margin-top: 3cm;
 }
 
-div#div_card_spotify {
+div.div_cards {
     transition: all 1s 0s ease;
-    margin-top: 3cm;
+    margin-top: 1.5cm;
 }
 
-div#div_card_riotgames:hover {
-    transform: scale(0.95);
-}
-
-div#div_card_spotify:hover {
+div.div_cards:hover {
     transform: scale(0.95);
 }
 
