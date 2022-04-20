@@ -109,55 +109,25 @@ div#div_card_spotify:hover {
 }
 
 div#div_name_riotgames:hover {
-    animation: bck_color_riotgames 1s forwards;
+    margin-left: -5cm;
+    padding-left: 0;
+    background-color: #E74C3C;
+    color: #FDFEFE;
 }
 
 div#div_name_riotgames {
-    animation: bck_color_riotgames_reverse 1s;
+    transition: all 1s 0s ease;
 }
 
 div#div_name_spotify:hover {
-    animation: bck_color_spotify 1s forwards;
+    margin-left: -5cm;
+    padding-left: 0;
+    background-color: #2ECC71;
+    color: #FDFEFE;
 }
 
 div#div_name_spotify {
-    animation: bck_color_spotify_reverse 1s;
+    transition: all 1s 0s ease;
 }
 
 /* MAIN - CARDS - KEYFRAMES */
-
-@keyframes bck_color_riotgames {
-    100% {
-        margin-left: -5cm;
-        padding-left: 0;
-        background-color: #E74C3C;
-        color: #FDFEFE;
-    }
-}
-
-@keyframes bck_color_riotgames_reverse {
-    0% {
-        margin-left: -5cm;
-        padding-left: 0;
-        background-color: #E74C3C;
-        color: #FDFEFE;
-    }
-}
-
-@keyframes bck_color_spotify {
-    100% {
-        margin-left: -5cm;
-        padding-left: 0;
-        background-color: #2ECC71;
-        color: #FDFEFE;
-    }
-}
-
-@keyframes bck_color_spotify_reverse {
-    0% {
-        margin-left: -5cm;
-        padding-left: 0;
-        background-color: #2ECC71;
-        color: #FDFEFE;
-    }
-}
