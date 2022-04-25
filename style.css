@@ -39,12 +39,13 @@ img {
 header {
     box-shadow: 5px 5px 15px 5px #000000;
     background-color: #FDFEFE;
-    transition: all 2s 0s ease;
+    transition: all 2s ease;
     color: #17202A;
     line-height: 5%;
     position: fixed;
     cursor: default;
-    width: 100%;
+    width: 100vw;
+    z-index: 2;
 }
 
 h1#h1_header {
@@ -52,20 +53,41 @@ h1#h1_header {
     font-size: 50px;
 }
 
-header:hover {
+header#header_back,
+header#header_back_home {
+    cursor: pointer;
+}
+
+/* HEADER - HIDDEN HOME */
+
+h1#h1_home {
+    font-family: 'Bigboz';
+    margin-left: 70vw;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+/* HEADER - HOVER */
+
+header#header_home:hover {
     transform: scale(1.2);
     letter-spacing: 10px;
 }
 
-header#header_back {
-    cursor: pointer;
+header#header_home_hidden:hover {
+    letter-spacing: 10px;
 }
 
-header#header_back:hover {
+header#header_back:hover,
+header#header_back_home:hover {
     border-bottom-right-radius: 5mm;
     transform: translateX(-30vw);
     background-color: #E74C3C;
     color: #FDFEFE;
+}
+
+header#header_back_home:not(:hover) {
+    transition-delay: 2s;
 }
 
 /* MAIN */
@@ -89,7 +111,7 @@ div.div_cards {
 }
 
 figure {
-    margin-right: 5cm;
+    margin-right: 50%;
     margin-left: 0;
 }
 
@@ -97,7 +119,7 @@ div.div_name {
     transition: all 1s 0s ease;
     margin-left: -5vw;
     border-radius: 3mm;
-    line-height: 12mm;
+    line-height: 4.5vw;
     padding-left: 1cm;
     font-size: 0.9vw;
 }
@@ -107,10 +129,6 @@ div.div_name:hover {
     padding-left: 5%;
     color: #FDFEFE;
 
-}
-
-div.div_cards:hover {
-    cursor: pointer;
 }
 
 h2.h2_name {
@@ -126,6 +144,7 @@ div#div_card_top {
 div.div_cards {
     transition: all 1s 0s ease;
     margin-top: 2.5cm;
+    cursor: pointer;
 }
 
 div.div_cards:hover {
@@ -161,3 +180,21 @@ div#div_name_lor:hover {
 }
 
 /* MAIN - CARDS - KEYFRAMES */
+
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+    div.div_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* BACKGROUND */
+
+body {
+    background-color: #17202A;
+    background-image: radial-gradient(#566573 0.30000000000000004px, #17202A 0.30000000000000004px);
+    background-size: 6px 6px;
+}
