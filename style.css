@@ -1,7 +1,6 @@
 /* HTML */
 
 body {
-    background-color: #17202A;
     text-align: center;
     color: #FDFEFE;
     padding: 0;
@@ -17,6 +16,11 @@ a {
 /* HTML - FONTS */
 
 @font-face {
+    font-family: 'Capriola';
+    src: url(./fonts/Capriola-Regular.ttf);
+}
+
+@font-face {
     font-family: 'Bigboz';
     src: url(./fonts/Bigboz.otf);
 }
@@ -24,6 +28,11 @@ a {
 @font-face {
     font-family: 'RetroComputer';
     src: url(./fonts/retro_computer_personal_use.ttf);
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url(./fonts/BebasNeue-Regular.ttf);
 }
 
 /* HTML - IMG */
@@ -49,20 +58,25 @@ header {
 }
 
 h1#h1_header {
-    font-family: 'Bigboz';
+    font-family: 'Bebas';
     font-size: 50px;
 }
 
 header#header_back,
-header#header_back_home {
+header#header_back_home,
+header#header_home_hidden {
     cursor: pointer;
+}
+
+header#header_home {
+    transition: all 1.2s ease;
 }
 
 /* HEADER - HIDDEN HOME */
 
 h1#h1_home {
-    font-family: 'Bigboz';
-    margin-left: 70vw;
+    font-family: 'Bebas';
+    margin-left: 71vw;
     font-size: 50px;
     cursor: pointer;
 }
@@ -70,7 +84,7 @@ h1#h1_home {
 /* HEADER - HOVER */
 
 header#header_home:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     letter-spacing: 10px;
 }
 
@@ -83,6 +97,7 @@ header#header_back_home:hover {
     border-bottom-right-radius: 5mm;
     transform: translateX(-30vw);
     background-color: #E74C3C;
+    letter-spacing: 10px;
     color: #FDFEFE;
 }
 
@@ -119,9 +134,7 @@ div.div_name {
     transition: all 1s 0s ease;
     margin-left: -5vw;
     border-radius: 3mm;
-    line-height: 4.5vw;
     padding-left: 1cm;
-    font-size: 0.9vw;
 }
 
 div.div_name:hover {
@@ -132,7 +145,9 @@ div.div_name:hover {
 }
 
 h2.h2_name {
-    font-family: 'RetroComputer';
+    font-family: 'Capriola';
+    line-height: 1vw;
+    font-size: 2vw;
 }
 
 /* MAIN - CARDS - SETTINGS */
@@ -185,7 +200,30 @@ div#div_name_lor:hover {
 
 /* MOBILE RESPONSIVE */
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+    div.div_name {
+        display: none;
+    }
+
+    div.div_figure {
+        border: solid transparent;
+    }
+
+    figure {
+        margin-right: 0;
+    }
+
+    div.div_cards {
+        display: block;
+        width: 90%;
+    }
+
+    div.div_container {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 500px) {
     div.div_container {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -195,6 +233,7 @@ div#div_name_lor:hover {
 
 body {
     background-color: #17202A;
-    background-image: radial-gradient(#566573 0.30000000000000004px, #17202A 0.30000000000000004px);
-    background-size: 6px 6px;
+    background-image: radial-gradient(#ffffff 1.85px, transparent 1.85px), radial-gradient(#ffffff 1.85px, #17202A 1.85px);
+    background-size: 74px 74px;
+    background-position: 0 0, 37px 37px;
 }
