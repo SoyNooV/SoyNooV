@@ -1,196 +1,121 @@
-/* -------------------- GENERAL - HTML -------------------- */
+/* -------------------- CSS General -------------------- */
 
 * {
     padding: 0;
     margin: 0;
 }
 
+body {
+    background-color: #26282B;
+    height: 100vh;
+    width: 100vw;
+    /* Propiedades */
+    text-align: center;
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
-    position: relative;
 }
 
-body {  
-    background-image: url(img/Background.png); 
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-}
-
-/* ---------- HTML - MAIN - ARTICLE - TITLE ---------- */
-
-main {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-article {
-    width: 100%;
-}
-
-h1.h1_title {
-    font-family: 'Capriola';
-    font-size: 10vw;
-    animation: bounce 1s ease infinite alternate;
-    position: relative;
-    cursor: default;
-    color: #17202A;
-    top: 20vw;
-    text-shadow: 0 1px 0 #424949,
-        0 2px 0 #424949,
-        0 3px 0 #424949,
-        0 4px 0 #424949,
-        0 5px 0 #424949,
-        0 6px 0 transparent,
-        0 7px 0 transparent,
-        0 8px 0 transparent,
-        0 9px 0 transparent,
-        0 10px 10px rgba(0, 0, 0, .6);
-}
-
-/* ANIMATION */
-@keyframes bounce {
-    100% {
-        top: 0px;
-        text-shadow: 0 1px 0 #424949,
-            0 2px 0 #424949,
-            0 3px 0 #424949,
-            0 4px 0 #424949,
-            0 5px 0 #424949,
-            0 6px 0 #424949,
-            0 7px 0 #424949,
-            0 8px 0 #424949,
-            0 9px 0 #424949,
-            0 30px 30px rgba(0, 0, 0, .3);
-    }
-}
-
-h1#h1_title_subtitle {
-    text-align: right;
-}
-
-/* ---------- HTML - FOOTER - NAV ---------- */
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-nav {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-/* -------------------- GENERAL - FONTS -------------------- */
+/* ---------- Fonts ---------- */
 
 @font-face {
     font-family: 'Capriola';
     src: url(font/Capriola-Regular.ttf);
 }
 
-/* -------------------- GENERAL - BUTTON -------------------- */
+/* -------------------- aside General -------------------- */
 
-a.a_button {
+nav.nav_footer {
     font-family: 'Capriola';
-    line-height: 1;
-    text-align: center;
-    font-size: 2rem;
-    display: inline-block;
-    padding: 20px;
+    background-color: #353941;
+    border-radius: 20px 20px 0px 0px;
+    /* Dimensiones */
+    margin-left: 4.8vw;
+    line-height: 19.4vh;
+    margin-top: 3vh;
+    height: 100vh;
+    width: 90vw;
+    /* Estilo */
     color: #FFF;
-    width: 100%;
+    box-shadow: 0px 0px 0px 5px #FFF, inset 0px 10px 27px -8px #000, inset 0px -10px 27px -8px #000;
 }
 
-/* ---------- BUTTON - COLOR ---------- */
+/* ----- Titulo ----- */
 
-a#a_button_red {
-    background-color: #E74C3C; 
+nav.nav_footer div.div_title {
+    /* Efectos */
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15), 2px 2px 2px rgba(206, 89, 55, 0);
+    box-shadow: inset 0px 10px 27px -8px #000, inset 0px -10px 27px -8px #000;
+    border-radius: 20px 20px 0px 0px;
 }
 
-a#a_button_green {
-    background-color: #2ECC71;
+nav.nav_footer div.div_title span {
+    /* Estilo */
+    text-transform: uppercase;
+    font-size: 60px;
+    display: inline-block;
+    animation: title_wave 1s ease-in-out infinite;
 }
 
-a#a_button_grey {
-    background-color: #7F8C8D;
+nav.nav_footer div.div_title span.one {
+    animation: title_wave 1s 0s ease-in-out infinite;
 }
 
-/* ---------- BUTTON - IMG ---------- */
-
-img {
-    width: 30px;
+nav.nav_footer div.div_title span.two {
+    animation: title_wave 1s 0.5s ease-in-out infinite;
 }
 
-/* ---------- BUTTON - ANIMATION ---------- */
+/* ----- Imagenes ----- */
 
-main.white {
-    animation: backgroundWhite 2s ease;
+nav.nav_footer img {
+    height: 6.7vh;
+    margin-top: 6.7vh;
+    margin-bottom: 6.7vh;
 }
 
-@keyframes backgroundWhite {
+/* ----- Secciones ----- */
+
+nav.nav_footer a {
+    display: flex;
+    /* Estilo */
+    color: #FFF;
+    box-shadow: inset 0px 10px 27px -8px #000, inset 0px -10px 27px -8px #000;
+    /* Dimensiones */
+    justify-content: center;
+}
+
+nav.nav_footer a:hover {
+    background-color: #5F85DB;
+}
+
+/* -- Variantes de las Secciones -- */
+
+nav.nav_footer a#a_nav_riotgames:hover {
+    background-color: #D80029;
+}
+
+nav.nav_footer a#a_nav_spotify:hover {
+    background-color: #1ED760;
+}
+
+/* ---------- Animaciones ---------- */
+
+@keyframes title_wave {
     0% {
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transform: translateY(0em);
+    }
+
+    34% {
+        transform: translateY(-0.2em);
+    }
+
+    68% {
+        transform: translateY(0.2em);
     }
 
     100% {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-}
-
-main.red {
-    animation: backgroundRed 2s ease;
-}
-
-main.redReverse {
-    animation: backgroundRedReverse 2s ease;
-}
-
-@keyframes backgroundRed {
-    0% {
-        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-    }
-
-    100% {
-        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
-    }
-}
-
-@keyframes backgroundRedReverse {
-    0% {
-        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
-    }
-
-    100% {
-        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-    }
-}
-
-main.green {
-    animation: backgroundGreen 2s ease;
-}
-
-main.greenReverse {
-    animation: backgroundGreenReverse 2s ease;
-}
-
-@keyframes backgroundGreen {
-    0% {
-        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-    }
-
-    100% {
-        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
-    }
-}
-
-@keyframes backgroundGreenReverse {
-    0% {
-        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
-    }
-
-    100% {
-        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+        transform: translateY(0em);
     }
 }
