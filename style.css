@@ -32,7 +32,7 @@ nav.nav_footer {
     background-color: #353941;
     border-radius: 20px 20px 0px 0px;
     /* Dimensiones */
-    line-height: 19.4vh;
+    line-height: 20.1vh;
     margin-left: 2.5vw;
     margin-top: 3vh;
     height: 97vh;
@@ -74,7 +74,7 @@ nav.nav_footer div.div_content {
     display: block;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    height: 76vh;
+    height: 14.85cm;
 }
 
 nav.nav_footer div.div_content::-webkit-scrollbar {
