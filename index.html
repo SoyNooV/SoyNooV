@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
@@ -7,9 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto_W</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/menuSlide.js"></script>
 </head>
 
 <body>
+
+    <div class="div_loader">
+        <div class="div_spin"></div>
+    </div>
 
     <header>
 
@@ -17,38 +24,56 @@
 
     <main>
 
+        <!-- <div class="div_main">
+
+            <figure class="figure_card">
+                <img src="" alt="">
+                <figcaption>Valorant</figcaption>
+            </figure>
+            <div class="div_card">
+
+            </div>
+            <div class="div_card">
+
+            </div>
+            <div class="div_card">
+
+            </div>
+
+        </div> -->
+
     </main>
 
     <footer class="footer_wrapper">
+
         <nav class="nav_footer">
-            <div class="div_title">
-                <span class="two"> - </span>
-                <span class="one"> W </span>
-                <span class="two"> E </span>
-                <span class="one"> L </span>
-                <span class="two"> C </span>
-                <span class="one"> O </span>
-                <span class="two"> M </span>
-                <span class="one"> E </span>
-                <span class="two"> - </span>
+
+            <div class="div_title" onclick="menuSlideReverse()">
+                <h1 class="h1_title"> - Welcome Home - </h1>
             </div class="div_title">
+
             <hr>
-            <a href="javascript:void(0)" id="a_nav_riotgames">
-                <img src="img/Riot_Games_Logo.png" alt="">
-            </a>
-            <hr>
-            <a href="javascript:void(0)" id="a_nav_spotify">
-                <img src="img/Spotify_Logo.png" alt="">
-            </a>
-            <hr>
-            <a href="javascript:void(0)">
-                Empty
-            </a>
-            <hr>
-            <a href="javascript:void(0)">
-                Empty
-            </a>
+
+            <div class="div_content">
+                <a href="javascript:void(0)" class="a_nav" id="a_nav_riotgames" onclick="menuSlide()">
+                    <img src="img/Riot_Games_Logo.png" alt="">
+                </a>
+                <hr>
+                <a href="javascript:void(0)" class="a_nav" id="a_nav_spotify" onclick="menuSlide()">
+                    <img src="img/Spotify_Logo.png" alt="">
+                </a>
+                <hr>
+                <a href="javascript:void(0)" class="a_nav" onclick="menuSlide()">
+                    Empty
+                </a>
+                <hr>
+                <a href="javascript:void(0)" class="a_nav" onclick="menuSlide()">
+                    Empty
+                </a>
+            </div>
+
         </nav class="nav_footer">
+
     </footer>
 
 </body>

@@ -25,21 +25,22 @@ a {
     src: url(font/Capriola-Regular.ttf);
 }
 
-/* -------------------- aside General -------------------- */
+/* -------------------- footer General -------------------- */
 
 nav.nav_footer {
     font-family: 'Capriola';
     background-color: #353941;
     border-radius: 20px 20px 0px 0px;
     /* Dimensiones */
-    margin-left: 4.8vw;
     line-height: 19.4vh;
+    margin-left: 2.5vw;
     margin-top: 3vh;
-    height: 100vh;
-    width: 90vw;
+    height: 97vh;
+    width: 95vw;
     /* Estilo */
     color: #FFF;
     box-shadow: 0px 0px 0px 5px #FFF, inset 0px 10px 27px -8px #000, inset 0px -10px 27px -8px #000;
+    overflow: hidden;
 }
 
 /* ----- Titulo ----- */
@@ -51,20 +52,12 @@ nav.nav_footer div.div_title {
     border-radius: 20px 20px 0px 0px;
 }
 
-nav.nav_footer div.div_title span {
+nav.nav_footer div.div_title h1 {
     /* Estilo */
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: clamp(30px, 5vw, 60px);
     display: inline-block;
-    animation: title_wave 1s ease-in-out infinite;
-}
-
-nav.nav_footer div.div_title span.one {
-    animation: title_wave 1s 0s ease-in-out infinite;
-}
-
-nav.nav_footer div.div_title span.two {
-    animation: title_wave 1s 0.5s ease-in-out infinite;
+    animation: title_wave 10s ease infinite;
 }
 
 /* ----- Imagenes ----- */
@@ -76,6 +69,27 @@ nav.nav_footer img {
 }
 
 /* ----- Secciones ----- */
+
+nav.nav_footer div.div_content {
+    display: block;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 76vh;
+}
+
+nav.nav_footer div.div_content::-webkit-scrollbar {
+    width: 10px;
+}
+
+nav.nav_footer div.div_content::-webkit-scrollbar-track {
+    background: #353941;
+}
+
+nav.nav_footer div.div_content::-webkit-scrollbar-thumb {
+    background-color: #FFF;
+    border-radius: 40px;
+    border: 3px solid #353941;
+}
 
 nav.nav_footer a {
     display: flex;
@@ -100,6 +114,18 @@ nav.nav_footer a#a_nav_spotify:hover {
     background-color: #1ED760;
 }
 
+/* -------------------- main General -------------------- */
+
+/* main figure.figure_card {
+    position: fixed;
+    color: #FFF;
+    z-index: -10;
+    background-color: #353941;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+} */
+
 /* ---------- Animaciones ---------- */
 
 @keyframes title_wave {
@@ -108,14 +134,53 @@ nav.nav_footer a#a_nav_spotify:hover {
     }
 
     34% {
-        transform: translateY(-0.2em);
+        transform: translateY(0.5em);
     }
 
     68% {
-        transform: translateY(0.2em);
+        transform: translateY(-0.3em);
     }
 
     100% {
         transform: translateY(0em);
+    }
+}
+
+@keyframes menuSlide {
+    from {
+        margin-top: 93vh;
+    }
+}
+
+/* ---------- Pantalla de Carga ---------- */
+
+.div_loader {
+    /* Posición */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Diseño */
+    display: flex;
+    background-color: #26282B;
+    justify-content: center;
+    align-items: center;
+    /* Retoques */
+    position: fixed;
+    z-index: 9999;
+}
+
+.div_loader .div_spin {
+    border: 3px solid hsla(185, 100%, 62%, 0.2);
+    border-top-color: #5F85DB;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
     }
 }
