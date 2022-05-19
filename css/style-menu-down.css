@@ -42,7 +42,7 @@ nav.nav_footer {
     /* Dimensiones */
     line-height: 19.4vh;
     margin-left: 2.5vw;
-    margin-top: 9vh;
+    margin-top: 16vh;
     height: 100vh;
     width: 95vw;
     /* Estilo */
@@ -140,6 +140,8 @@ main div.div_main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+    padding-left: 60px;
+    padding-top: 100px;
 }
 
 /* ---------- Tarjetas del main ---------- */
@@ -190,7 +192,7 @@ main a.a_main img {
     0% {}
 
     100% {
-        transform: translateY(-400px);
+        transform: translateY(-700px);
     }
 }
 
@@ -198,7 +200,7 @@ main a.a_main img {
     0% {}
 
     100% {
-        transform: translateY(0px);
+        transform: translateY(100px);
     }
 }
 
